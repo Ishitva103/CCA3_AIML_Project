@@ -1,0 +1,13 @@
+!pip -q install transformers
+from transformers import pipeline
+sentiment = pipeline("sentiment-analysis")
+
+result = sentiment("I really enjoyed the picnic.")
+print(result)
+
+result = sentiment("The laboratory computers are very slow.")
+print(result)
+
+result = sentiment("Is the AI always correct?")
+print(result)
+
